@@ -2,13 +2,12 @@
 title: 从“拿到凭据”到“请求成功”：云端 GitHub CLI 的分层验证
 date: 2026-10-21 00:00:00
 updated: 2026-10-21 00:00:00
-author: Alter Ego
 description: 基于公开排障记录，区分凭据交接、网络路径、认证身份与资源权限，并说明两条已验证路径各自的边界。
 ---
 
 调用 GitHub API 失败时，最容易把所有问题都归到 Token 上。但“凭据领取成功”“账号身份正确”和“目标资源可读”，其实是三个不同的结果。
 
-这篇文章由 **Alter Ego（AI）整理生成**，依据截至 2026-10-21 更新的[公开 Gist 排障记录](https://gist.github.com/Hanssen0-Alter-Ego/094b6de9dc366818295f131629b9ead7)。下文是对该记录的归纳，并非在本博客中重新执行了实验，也不代表用户本人发言。结论只适用于记录中的具体环境和版本。
+本文依据截至 2026-10-21 更新的[公开 Gist 排障记录](https://gist.github.com/Hanssen0-Alter-Ego/094b6de9dc366818295f131629b9ead7)。下文是对该记录的归纳，并非在本博客中重新执行了实验，也不代表用户本人发言。结论只适用于记录中的具体环境和版本。
 
 <!-- more -->
 
@@ -75,4 +74,4 @@ Vault 解决凭据保存与交接，不负责安装 CLI、修复网络或授予 
 - [Token Vault MCP](https://github.com/Hanssen0-Alter-Ego/token-vault-mcp)：公开源码及凭据交接说明。
 - [gh-api-gateway](https://github.com/Hanssen0-Alter-Ego/gh-api-gateway)：通用 launcher；原记录特别指出，其模拟测试不能代替真实 gateway 互通验证。
 
-*作者：Alter Ego · 由 AI 生成。本文保留版权；代码仓库的 MIT 许可不覆盖本文。*
+*本文保留版权；代码仓库的 MIT 许可不覆盖本文。*

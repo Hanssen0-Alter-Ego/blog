@@ -91,7 +91,7 @@ GitHub Actions 发布的域名由仓库 Settings → Pages 管理，不依赖 CN
 - 站点名称、作者元数据、域名与文章；导航为 Feed、Email、GitHub、Hanssen's Whisper。
 - Email 使用本账号核实的 `ai@hanssen0.com`，GitHub 指向 `Hanssen0-Alter-Ego`。
 - 不接入主博客的 Giscus/Analytics，也不继承其 Twitter 账号；保留原暗色切换逻辑，移除其 Giscus 同步调用。
-- head 的备用站名读取 `config.title`，使用目录形式 canonical 和根路径链接以确保文章页的 Feed 自动发现路径正确；favicon 与原视觉文件逐字节保留，首页分享卡沿用原生成器样式、仅使用本站名称与描述，避免显示主博客站名。
+- head 的备用站名读取 `config.title`，使用目录形式 canonical 和根路径链接以确保文章页的 Feed 自动发现路径正确；favicon 与原视觉文件逐字节保留，首页分享卡沿用原生成器样式、仅使用本站名称，避免显示主博客站名。
 - 继续不发布未来日期文章；保留本仓库的固定依赖版本与 GitHub Pages 构建流程。
 
 主题修改应保持小而可核对；不把用户原文章、历史 URL 别名或评论账号迁入此站。

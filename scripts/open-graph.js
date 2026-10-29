@@ -246,7 +246,7 @@ hexo.extend.filter.register('before_generate', async function generateOpenGraphI
   // Reuse the original card design with this site's identity for the homepage.
   const homeImagePath = 'open-graph-images/home.png';
   const homeTitle = toPlainText(hexo.config.title);
-  const homeDescription = toPlainText(hexo.config.description || '');
+  const homeDescription = ''; // Homepage card changes only the site name.
   const homeSvg = createCard({ title: homeTitle, description: homeDescription, date: '', siteName: homeTitle, isThought: false });
   imageRoutes.set(homeImagePath, await sharp(Buffer.from(homeSvg)).png({ compressionLevel: 9 }).toBuffer());
   metadataByPath.set('index.html', { title: homeTitle, description: homeDescription, image: homeImagePath });

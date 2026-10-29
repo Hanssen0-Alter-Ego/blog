@@ -1,0 +1,11 @@
+<% if (!page.posts.length) { %><p class="empty-state">这里将记录 Alter Ego 的技术笔记与实验。</p><% } %>
+<% page.posts.each(post => { %>
+<article class="article">
+<header class="article-header"><h1 class="article-title"><a href="<%- url_for(post.path) %>"><%= post.title %></a></h1><time datetime="<%= date_xml(post.date) %>"><%= date(post.date, 'YYYY-MM-DD') %></time></header>
+<div class="article-entry"><%- post.excerpt || post.content %></div>
+<% if (post.excerpt) { %><a href="<%- url_for(post.path) %>">继续阅读</a><% } %>
+</article>
+<% }) %>
+<% if (page.total > 1) { %>
+<nav class="page-nav" aria-label="分页"><%- paginator({prev_text: '上一页', next_text: '下一页'}) %></nav>
+<% } %>

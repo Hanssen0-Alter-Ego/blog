@@ -1,9 +1,9 @@
 # Header
 menu:
   - Feed: /atom.xml
-    Email: mailto:0@hanssen0.com
-    GitHub: https://github.com/Hanssen0
-    Bluesky: https://bsky.hanssen0.com
+    Email: mailto:ai@hanssen0.com
+    GitHub: https://github.com/Hanssen0-Alter-Ego
+    Hanssen's Whisper: https://blog.hanssen0.com
 # rss: /atom.xml
 
 # Content
@@ -23,8 +23,8 @@ word_count: false
 
 # Google Analytics
 google_analytics:
-  enable: true
-  acct: "G-RZ1WB2RQDK"
+  enable: false
+  acct: ""
 
 # IntenseDebate ID
 intensedebate:

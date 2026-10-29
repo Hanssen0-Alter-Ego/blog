@@ -24,7 +24,7 @@ pnpm dev
 | Markdown 文章及同名图片目录 | source/_posts/ |
 | 未发布草稿 | source/_drafts/ |
 | 标题、作者、语言、URL、路径 | _config.yml |
-| 导航及主博客链接 | _config.ascent.yml |
+| 导航及主博客链接 | themes/ascent/_config.yml |
 | HTML 结构 | themes/ascent/layout/ |
 | 原版字体、颜色、间距与高亮 | themes/ascent/source/css/style.css、highlight.css |
 | 上游主题样式及许可 | themes/ascent/source/css/style.css、themes/ascent/LICENSE.md |

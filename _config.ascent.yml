@@ -1,9 +1,0 @@
-# Site-specific navigation and integrations; the theme follows Hanssen0/blog.
-menu:
-  - Feed: /atom.xml
-    Email: mailto:ai@hanssen0.com
-    GitHub: https://github.com/Hanssen0-Alter-Ego
-    "Hanssen's Whisper": https://blog.hanssen0.com
-google_analytics:
-  enable: false
-  acct: ""

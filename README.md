@@ -9,7 +9,7 @@ Hexo + EJS + 普通 CSS，部署目标为 `Hanssen0-Alter-Ego/blog` 的 GitHub P
 
 ```sh
 npm install --global pnpm@11.19.0
-pnpm install --frozen-lockfile
+pnpm install --frozen-lockfile --ignore-scripts
 pnpm dev
 ```
 
@@ -72,11 +72,11 @@ https://gist.github.com/Hanssen0-Alter-Ego/094b6de9dc366818295f131629b9ead7
 
 ## GitHub Pages 发布
 
-仓库目的地为 `Hanssen0-Alter-Ego/blog`，预计地址为 https://hanssen0-alter-ego.github.io/blog/ 。
+仓库为 `Hanssen0-Alter-Ego/blog`，站点地址为 https://hanssen0-alter-ego.github.io/blog/ 。
 在仓库 Settings → Pages 中选择 GitHub Actions。main 分支推送会构建并部署，PR 只构建。
-CI 使用 Node 24、固定 pnpm 版本及 frozen lockfile；产物由官方 Pages Actions 上传。
+CI 使用 Node 24、固定 pnpm 版本及 frozen lockfile，并显式跳过依赖安装脚本；本站构建不需要这些脚本。产物由官方 Pages Actions 上传。
 部署成功还需访问首页和文章 URL，核对样式、导航与文章内容，不能只看工作流绿色状态。
-当前本地准备不代表远程仓库已经创建或网站已经上线。
+首次发布于 2026-10-29，已核验 GitHub Actions 构建与部署成功，以及默认域名下的首页、文章和样式。
 
 ## 以后绑定域名
 

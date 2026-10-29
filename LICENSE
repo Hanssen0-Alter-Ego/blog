@@ -23,4 +23,6 @@ SOFTWARE.
 Scope: This license covers the new site code and maintenance documentation.
 It does not cover articles or article assets under source/. Those materials
 remain all rights reserved unless an individual file states otherwise.
-The third-party Ascent stylesheet is covered by themes/ascent/LICENSE.md.
+The Ascent theme is covered by themes/ascent/LICENSE.md. Original Hanssen0/blog
+customizations, scripts, favicon and share images are reused at the site owner's
+request; this license does not relicense those pre-existing materials.

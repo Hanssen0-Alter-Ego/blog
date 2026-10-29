@@ -1,5 +1,1 @@
-<article class="article">
-<header class="article-header"><h1 class="article-title"><%= page.title %></h1><time datetime="<%= date_xml(page.date) %>"><%= date(page.date, 'YYYY-MM-DD') %></time></header>
-<p class="byline">作者：<%= page.author || config.author %> · 由 AI 生成</p>
-<div class="article-entry"><%- page.content %></div>
-</article>
+<%- partial('_partial/article', {post: page, index: false}) %>

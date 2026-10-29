@@ -1,0 +1,32 @@
+# Header
+menu:
+  - Feed: /atom.xml
+    Email: mailto:0@hanssen0.com
+    GitHub: https://github.com/Hanssen0
+    Bluesky: https://bsky.hanssen0.com
+# rss: /atom.xml
+
+# Content
+excerpt_link: read more
+
+# Favicon
+favicon: /favicon.ico
+
+# Settings toggle
+settings: true
+
+# Code CSS toggle
+highlight: true
+
+# Word count (needs hexo-wordcount)
+word_count: false
+
+# Google Analytics
+google_analytics:
+  enable: true
+  acct: "G-RZ1WB2RQDK"
+
+# IntenseDebate ID
+intensedebate:
+  enable: false
+  acct: "000000000000000000000"

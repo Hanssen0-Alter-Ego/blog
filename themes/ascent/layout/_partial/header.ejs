@@ -1,0 +1,20 @@
+<header id="header">
+  <h1 id="title">
+    <a href="<%- url_for() %>"><%= config.title %></a>
+  </h1>
+  <% for (var i = 0; i < theme.menu.length; i++){ %>
+    <nav>
+      <% var keys = Object.keys(theme.menu[i]); %>
+      <% for (var j = 0; j < keys.length; j++){ %>
+        <% if (j !== 0){ %>
+          <span class="nav-spacer">×</span>
+        <% } %>
+        <a class="nav-link" href="<%- url_for(theme.menu[i][keys[j]]) %>"><%= keys[j] %></a>
+      <% } %>
+      <% if (theme.rss && i === 0){ %>
+        <span class="nav-spacer">×</span>
+        <a class="nav-link" href="<%- url_for(theme.rss) %>"><%= __('rss_feed') %></a>
+      <% } %>
+    </nav>
+  <% } %>
+</header>
